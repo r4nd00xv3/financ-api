@@ -2,8 +2,8 @@ package com.finacapi.financapi.model;
 
 import lombok.Getter;
 import lombok.Setter;
-
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "categoria")
@@ -17,5 +17,6 @@ public class Categoria {
 
     @Getter
     @Setter
+    @NotNull
     private String nome;
 }
